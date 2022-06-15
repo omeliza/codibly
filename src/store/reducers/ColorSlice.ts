@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IData } from "../../models/IColor";
-import { fetchColors } from "./ActionCreator";
+import { fetchColors } from "./actionCreator";
 
 interface ColorState {
   colors: IData[],
