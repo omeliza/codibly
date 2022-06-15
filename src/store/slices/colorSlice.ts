@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IData } from "../../models/IColor";
-import { fetchColors } from "./ActionCreator";
+import { fetchColors } from "./actionCreator";
 
 interface ColorState {
   colors: IData[],
@@ -23,18 +23,6 @@ export const colorSlice = createSlice({
     search: (state, action) => {
       state.searchText = action.payload;
     }
-    // colorsFetching(state) {
-    //   state.isLoading = true;
-    // },
-    // colorsFetchingSuccess(state, action: PayloadAction<IColor[]>) {
-    //   state.isLoading = false;
-    //   state.error= '';
-    //   state.colors = action.payload;
-    // },
-    // colorsFetchingError(state, action: PayloadAction<string>) {
-    //   state.isLoading = false;
-    //   state.error = action.payload;
-    // }
   },
   extraReducers: {
     [fetchColors.fulfilled.type]: (state, action: PayloadAction<IData[]>) => {

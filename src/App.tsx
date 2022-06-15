@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useAppDispatch } from './hooks/hooks';
-import { fetchColors } from './store/reducers/ActionCreator';
+import { fetchColors } from './store/slices/actionCreator';
 import SearchAppBar from './components/SearchAppBar/SearchAppBar';
 import { TableWithPagination } from './components/TableWithPagination/TableWithPagination';
 

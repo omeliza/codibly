@@ -1,17 +1,13 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-// import { colorAPI } from "../services/DataService";
-import colorReducer from './reducers/ColorSlice';
+import colorReducer from './slices/colorSlice';
 
 const rootReducer = combineReducers({
   colorReducer,
-  // [colorAPI.reducerPath]: colorAPI.reducer
 })
 
 export const setupStore = () => {
   return configureStore({
     reducer: rootReducer,
-    // middleware: (getDefaultMiddleware) =>
-    //   getDefaultMiddleware().concat(colorAPI.middleware)
   })
 }
 
