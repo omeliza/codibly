@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import colorReducer from './reducers/ColorSlice';
+import colorReducer from './slices/colorSlice';
 
 const rootReducer = combineReducers({
   colorReducer,

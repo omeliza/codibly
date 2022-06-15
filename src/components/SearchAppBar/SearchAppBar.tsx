@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { search } from '../../store/reducers/ColorSlice';
+import { search } from '../../store/slices/colorSlice';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import { Search, SearchIconWrapper, StyledInputBase } from './styles';
 
